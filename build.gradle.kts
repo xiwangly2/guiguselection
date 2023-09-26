@@ -20,6 +20,7 @@ repositories {
 
 dependencies {
     implementation("org.yaml:snakeyaml:2.0")
+    implementation("org.bouncycastle:bcprov-jdk15on:1.70")
     implementation("com.google.protobuf:protobuf-java:3.16.3")
     implementation("org.springframework.boot:spring-boot-starter-web:3.1.0")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2")

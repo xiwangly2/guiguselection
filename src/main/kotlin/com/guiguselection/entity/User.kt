@@ -13,7 +13,7 @@ data class User(
     val descrip: String,
 
     val username: String,
-    val passwd: String,
+    var passwd: String,
 
     @ElementCollection
     val roles: List<String>,
