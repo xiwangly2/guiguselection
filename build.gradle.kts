@@ -19,10 +19,15 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    implementation("org.yaml:snakeyaml:2.0")
+    implementation("com.google.protobuf:protobuf-java:3.16.3")
+    implementation("org.springframework.boot:spring-boot-starter-web:3.1.0")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.8.10")
+    implementation("mysql:mysql-connector-java:8.0.28")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.0.4")
+    implementation("org.hibernate.validator:hibernate-validator:6.2.0.Final")
+    testImplementation("org.springframework.boot:spring-boot-starter-test:3.1.0")
 }
 
 tasks.withType<KotlinCompile> {

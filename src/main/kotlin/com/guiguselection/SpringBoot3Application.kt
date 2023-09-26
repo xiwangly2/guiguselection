@@ -2,8 +2,10 @@ package com.guiguselection
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.autoconfigure.domain.EntityScan
 
 @SpringBootApplication
+@EntityScan(basePackages = ["com.guiguselection"])
 class SpringBoot3Application {
     companion object {
         @JvmStatic
