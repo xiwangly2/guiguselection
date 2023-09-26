@@ -49,7 +49,7 @@ class UserController {
         }
     }
 
-    @GetMapping("/info")
+    @RequestMapping("/info")
     fun getUserInfo(@RequestHeader("token") token: String): ApiResponse<User> {
         val user = userRepository.findByToken(token)
 

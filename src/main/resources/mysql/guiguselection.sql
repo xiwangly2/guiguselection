@@ -11,7 +11,7 @@
  Target Server Version : 80012
  File Encoding         : 65001
 
- Date: 26/09/2023 20:19:51
+ Date: 26/09/2023 21:48:26
 */
 
 SET NAMES utf8mb4;
@@ -38,7 +38,8 @@ CREATE TABLE `user`  (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES (1, 'https://example.com/avatar.jpg', 'newuser', 'newpassword', 'New User Description', 'user_token', NULL, NULL, NULL, NULL);
+INSERT INTO `user` VALUES (6, 'https://example.com/avatar.jpg', 'admin', 'TqVd9i4ow3fWPyIB7HFyrV/DL8bQwMp5uTruxWTZ7lc=:JkPaqEX/ztA8OfVOVhtqRbjKMWAxfXdhsOeCk5jkHuhZJkULnN9COU+R7I2EBuPyBFEBkXruEvAKmNwD/5hBMg==', 'New User Description', 'user_token', NULL, NULL, NULL, NULL);
+INSERT INTO `user` VALUES (7, 'https://example.com/avatar.jpg', 'root', 'mWGLfxNa3Y6rh8G4JAFDSZ4u5qb1GOIVzc4kanR02F8=:EIyZoqywDHbI6O7jgmaxHS9wtnlHTzv7ZFKpzFQt9+3thDODfRAmqUrqjCsCpVQDdRYcJ4nVjAlS1j2ecaKqYw==', 'New User Description', 'user_token1', NULL, NULL, NULL, NULL);
 
 -- ----------------------------
 -- Table structure for user_buttons
@@ -54,6 +55,18 @@ CREATE TABLE `user_buttons`  (
 -- ----------------------------
 INSERT INTO `user_buttons` VALUES (1, 'button1');
 INSERT INTO `user_buttons` VALUES (1, 'button2');
+INSERT INTO `user_buttons` VALUES (2, 'button1');
+INSERT INTO `user_buttons` VALUES (2, 'button2');
+INSERT INTO `user_buttons` VALUES (3, 'button1');
+INSERT INTO `user_buttons` VALUES (3, 'button2');
+INSERT INTO `user_buttons` VALUES (4, 'button1');
+INSERT INTO `user_buttons` VALUES (4, 'button2');
+INSERT INTO `user_buttons` VALUES (5, 'button1');
+INSERT INTO `user_buttons` VALUES (5, 'button2');
+INSERT INTO `user_buttons` VALUES (6, 'button1');
+INSERT INTO `user_buttons` VALUES (6, 'button2');
+INSERT INTO `user_buttons` VALUES (7, 'button1');
+INSERT INTO `user_buttons` VALUES (7, 'button2');
 
 -- ----------------------------
 -- Table structure for user_roles
@@ -69,6 +82,18 @@ CREATE TABLE `user_roles`  (
 -- ----------------------------
 INSERT INTO `user_roles` VALUES (1, 'user');
 INSERT INTO `user_roles` VALUES (1, 'member');
+INSERT INTO `user_roles` VALUES (2, 'user');
+INSERT INTO `user_roles` VALUES (2, 'member');
+INSERT INTO `user_roles` VALUES (3, 'user');
+INSERT INTO `user_roles` VALUES (3, 'member');
+INSERT INTO `user_roles` VALUES (4, 'user');
+INSERT INTO `user_roles` VALUES (4, 'member');
+INSERT INTO `user_roles` VALUES (5, 'user');
+INSERT INTO `user_roles` VALUES (5, 'member');
+INSERT INTO `user_roles` VALUES (6, 'user');
+INSERT INTO `user_roles` VALUES (6, 'member');
+INSERT INTO `user_roles` VALUES (7, 'user');
+INSERT INTO `user_roles` VALUES (7, 'member');
 
 -- ----------------------------
 -- Table structure for user_routes
@@ -84,5 +109,17 @@ CREATE TABLE `user_routes`  (
 -- ----------------------------
 INSERT INTO `user_routes` VALUES (1, 'route1');
 INSERT INTO `user_routes` VALUES (1, 'route2');
+INSERT INTO `user_routes` VALUES (2, 'route1');
+INSERT INTO `user_routes` VALUES (2, 'route2');
+INSERT INTO `user_routes` VALUES (3, 'route1');
+INSERT INTO `user_routes` VALUES (3, 'route2');
+INSERT INTO `user_routes` VALUES (4, 'route1');
+INSERT INTO `user_routes` VALUES (4, 'route2');
+INSERT INTO `user_routes` VALUES (5, 'route1');
+INSERT INTO `user_routes` VALUES (5, 'route2');
+INSERT INTO `user_routes` VALUES (6, 'route1');
+INSERT INTO `user_routes` VALUES (6, 'route2');
+INSERT INTO `user_routes` VALUES (7, 'route1');
+INSERT INTO `user_routes` VALUES (7, 'route2');
 
 SET FOREIGN_KEY_CHECKS = 1;
