@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/api/other")
-class OtherController {
+class OtherController : BaseController() {
 
     @GetMapping("/someEndpoint")
     fun someEndpoint(): String {

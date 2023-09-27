@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "com.guiguselection"
-version = "0.0.1-SNAPSHOT"
+version = "1.0.0"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -21,13 +21,13 @@ repositories {
 dependencies {
     implementation("org.yaml:snakeyaml:2.0")
     implementation("org.bouncycastle:bcprov-jdk15on:1.70")
-    implementation("com.google.protobuf:protobuf-java:3.16.3")
+    implementation("com.google.protobuf:protobuf-java:3.22.2")
     implementation("org.springframework.boot:spring-boot-starter-web:3.1.0")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.8.10")
-    implementation("mysql:mysql-connector-java:8.0.28")
+    implementation("mysql:mysql-connector-java:8.0.33")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.0.4")
-    implementation("org.hibernate.validator:hibernate-validator:6.2.0.Final")
+    implementation("org.hibernate.validator:hibernate-validator:8.0.0.Final")
     testImplementation("org.springframework.boot:spring-boot-starter-test:3.1.0")
 }
 

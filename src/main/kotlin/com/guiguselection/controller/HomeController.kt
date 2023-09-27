@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("")
-class HomeController {
+class HomeController : BaseController() {
 
     @RequestMapping("/")
     fun someEndpoint(): String {

@@ -13,7 +13,7 @@ import java.util.*
 
 @RestController
 @RequestMapping("/api/user")
-class UserController {
+class UserController : BaseController() {
 
     @Autowired
     private lateinit var userRepository: UserRepository
