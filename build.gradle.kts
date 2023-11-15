@@ -26,6 +26,7 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.8.10")
     implementation("mysql:mysql-connector-java:8.0.33")
+    implementation("org.springframework.boot:spring-boot-starter-thymeleaf:3.0.4")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.0.4")
     implementation("org.hibernate.validator:hibernate-validator:8.0.0.Final")
     testImplementation("org.springframework.boot:spring-boot-starter-test:3.1.0")
