@@ -7,11 +7,13 @@ import jakarta.validation.Valid
 import org.bouncycastle.crypto.generators.Argon2BytesGenerator
 import org.bouncycastle.crypto.params.Argon2Parameters
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Controller
+import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.*
 import java.security.SecureRandom
 import java.util.*
 
-@RestController
+@Controller
 @RequestMapping("/api/user")
 class UserController : BaseController() {
 
@@ -58,6 +60,19 @@ class UserController : BaseController() {
         } else {
             ApiResponse(401, message = "获取用户信息失败")
         }
+    }
+
+    // 添加一个GetMapping方法来列出所有用户
+//    @RequestMapping("/list")
+//    fun listUsers(): ApiResponse<List<User>> {
+//        val users = userRepository.findAll()
+//        return ApiResponse(200, users)
+//    }
+    @GetMapping("/list")
+    fun listUsers(model: Model): String {
+        val users = userRepository.findAll()
+        model.addAttribute("users", users)
+        return "userList"
     }
 
     private fun hashPassword(password: String): String {
